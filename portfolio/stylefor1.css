@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    font-family: 'Barlow', sans-serif;
+    color: white;
+    justify-content: space-between;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+#certifications{
+    background:linear-gradient(to bottom, #00D4FF,  #0080FF )
+}
+#contact {
+    background: linear-gradient(to bottom,rgba(20, 131, 191, 0.77), #0080FF);
+}
+
+#navbar {
+    display: flex; 
+    justify-content: center; 
+    background-color: #0080FF;
+    padding: 15px 0;
+    text-align: center;
+}
+
+#navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 18px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+#navbar a:hover {
+    color: rgba(74, 67, 172, 0.63);
+    transform: scale(1.1);
+}
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#about {
+    height: auto;
+    background: linear-gradient(to bottom, #020024, #090979);
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+p {
+    font-size: 20px;
+    line-height: 1;
+    font-family: source-serif-pro, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+/* Updated Project Section */
+#projects {
+    padding: 50px 30px;
+    background: linear-gradient(to bottom, #090979, #00D4FF);
+}
+
+#project-grid {
+    display: flex;              /* Use flexbox to arrange tiles in a row */
+    flex-wrap: wrap;            /* Allow the tiles to wrap if there’s not enough space */
+    gap: 20px;                  /* Space between tiles */
+    justify-content: flex-start; /* Align tiles to the left */
+    margin-top: 30px;
+    width: 100%;                /* Ensure it takes the full width */
+}
+
+.project-tile {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    color: white;
+    transition: transform 0.3s, background-color 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%; /* Ensure tiles take full width of their container */
+    height: 90%; /* Ensure tiles take full height of their container */
+    min-height: 350px; /* Ensures tiles have more height */
+    flex: 1 1 250px;  /* Allow tiles to grow and shrink but have a minimum width of 250px */
+    max-width: 300px;  /* Optional: Set max width for each tile */
+    margin: 0 15px;    /* Add space between tiles */
+}
+
+.project-tile img {
+    width: 90%;
+    height: 90;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.project-tile:hover {
+    background-color: rgba(255, 255, 255, 0.52);
+    transform: scale(1.03);
+    width:120%;
+    height: 120%;
+}
+
+
+.project-tile p {
+    font-size: 16px;
+    text-align: center;
+    margin-top: auto;
+    color: #f0f0f0;
+}
+
+.card {
+    background-image: url('images/creditcardfraud.png');
+    font-size: 20px;
+    font-color: white;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+section {
+    animation: slideIn 1.5s ease-out;
+}
