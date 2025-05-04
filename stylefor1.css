@@ -1,6 +1,10 @@
 body {
     margin: 0;
-    font-family: 'Barlow', sans-serif;
+    //font-family: 'Barlow', sans-serif;
+    font-family: Basis-regular;
+    font-size: 1.125rem;
+    line-height: 180%;
+    letter-spacing: .03125rem;
     color: white;
     justify-content: space-between;
 }
